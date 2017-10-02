@@ -39,7 +39,7 @@ caffe::Net<Dtype>* loadNet(std::string param_file, std::string pretrained_param_
 }
 
 pair<cv::Mat,vector<int>>  imgpreprocess (cv::Mat img){
-  // We need to resize the input image with size 513 * 513 . The resize image shouldn't distore the image
+  // We need to resize the input image to size 513 * 513 . The resized image shouldn't distort the image
   cv::Mat tmp, complement, newimg;
   vector<cv::Mat> channels;
   int height = img.rows, width = img.cols, newW,newH;

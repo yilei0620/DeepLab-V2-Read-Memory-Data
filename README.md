@@ -1,6 +1,6 @@
 # Introduction
 
-[DeepLab](https://bitbucket.org/aquariusjay/deeplab-public-ver2) is a nice framework for image sematic segmentation. Details about DeepLab please refer the [project website]((https://bitbucket.org/aquariusjay/deeplab-public-ver2)) built by authors.
+[DeepLab](https://bitbucket.org/aquariusjay/deeplab-public-ver2) is a nice framework for image sematic segmentation. Details about DeepLab please refer to the [project website]((https://bitbucket.org/aquariusjay/deeplab-public-ver2)) built by authors.
 
 However, the original package doesn't provide a method to read data from memory. I found there is a little information in the internet to deal with this issue.
 
@@ -14,4 +14,4 @@ The example can be found in directory `example_reading_from_memory`. The differe
 
 `void MemoryDataLayer<Dtype>::AddMatVector(const vector<cv::Mat>& mat_vector, const vector<int>& labels, const vector<pair<int, int > >& dim_vector)`,
  
-where `mat_vector` is the vector for input images, `labels` is the vector for corresponding labels and `dim_vector` is the vector for input images' dimensions. The form of dimensions is `<height, width>`.
+where `mat_vector` is the vector for input images, `labels` is the vector for corresponding labels and `dim_vector` is the vector for input images' dimensions. The form of dimensions are `<height, width>`.
