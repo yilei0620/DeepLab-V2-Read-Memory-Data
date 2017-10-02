@@ -5,8 +5,8 @@
 However, the original package doesn't provide a method to read data from memory. I found there is a little information in the internet to deal with this issue.
 
 If we want to use `MemoryDataLayer` to read the data, it doesnt' work in the case that we want to implement `crf layer`. Thus, I rewrote the `MemoryDataLayer` to make it output 3 top layers so that now we can use it to read data from memory and feed to Caffe module.
+![alt-tag](https://github.com/yilei0620/DeepLab-V2-Read-Memory-Data/blob/master/example_reading_from_memory/example_showing.png)
 
-We implement common slam techniques to reconstruct the RGB-d mapping. Since the method can't deal with movable objects, we are trying to use semantic segmentation method to remove those objects during mapping (person, cat, car, bus ...). The semantic segmentation library used is [DeepLab-V2](https://bitbucket.org/aquariusjay/deeplab-public-ver2) [VGG-16](http://liangchiehchen.com/projects/DeepLabv2_vgg.html) based model. 
 
 ## Tutorial
 
